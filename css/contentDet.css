@@ -1,0 +1,55 @@
+.body {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    padding: 85px 20px; /* Padding to add spacing and prevent overflow */
+    background: url('../images/about-us bg.png') no-repeat center center/cover; /* Background settings */
+    margin: 0; /* Removes default margin for consistent layout */
+    box-sizing: border-box; /* Includes padding in total height/width calculations */
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    overflow: hidden; /* Ensures content doesn't spill out of the card */
+    padding: 20px; /* Padding inside the card */
+    display: flex;
+    flex-direction: column; /* Vertical stack */
+    align-items: flex-start; /* Aligns to the left */
+    gap: 20px; /* Space between elements */
+    box-sizing: border-box; /* Includes padding in total width/height */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Stacks labels and data vertically */
+    width: 100%; /* Full width */
+    gap: 15px; /* Space between each label and data pair */
+}
+
+.label {
+    width: 100%; /* Full width for the label */
+    font-weight: bold;
+    color: #333;
+    text-align: left; /* Align text to the left */
+}
+
+.data {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    word-wrap: break-word;
+    white-space: normal;
+    width: 100%; /* Full width for the data */
+    text-align: left; /* Align data text to the left */
+}
+
+.image-container img {
+    width: 100%; /* Makes the image responsive */
+    max-width: 600px; /* Limits max width */
+    max-height: 800px; /* Limits max height */
+    object-fit: cover; /* Prevents distortion */
+    border-radius: 4px; /* Optional: rounded corners */
+    margin: 0 auto; /* Centers the image inside the container */
+}

@@ -1,0 +1,54 @@
+/* About Us Styles */
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Fill the whole viewport height */
+    text-align: center; /* Center text */
+    background: url('../images/about-us\ bg.png') no-repeat center center/cover; /* Corrected image path and added background settings */
+}
+
+.about-us h1 {
+    font-size: 3em; /* Adjust this value to your preference */
+    font-weight: bold; /* Makes the text bold */
+    color: #000000; /* Sets text color */
+    text-shadow: 2px 2px 5px #404040; /* Corrected shadow effect */
+}
+
+.about-us h1:hover{
+    color: #d03465; /* Change text color on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    transform: scale(1.1); /* Slightly enlarge the text */
+    transition: all 0.3s ease-in-out; /* Smooth transition for the effect */
+}
+
+.about-text {
+    max-width: 600px; /* Optional: Limit width of the paragraph */
+    margin-top: 20px; /* Space between image and text */
+    padding: 20px; /* Add padding inside the box */
+    background-color: white; /* Background color of the box */
+    border-radius: 10px; /* Rounded corners for the box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for the box */
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.US img {
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Ensure height is set for uniformity */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover;
+    border: 2px solid black;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.US img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
